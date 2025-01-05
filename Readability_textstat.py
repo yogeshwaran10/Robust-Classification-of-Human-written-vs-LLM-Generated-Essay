@@ -1,9 +1,8 @@
 import pandas as pd
 import textstat
-from tqdm.auto import tqdm
+from tqdm.auto import tqdm 
 
 def readability_scores(text: str) -> dict:
-    """Calculate various readability scores for the given text."""
     scores = {
         "flesch_kincaid": textstat.flesch_kincaid_grade(text),
         "flesch_reading_ease": textstat.flesch_reading_ease(text),
